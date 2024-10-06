@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# alsghk05.github.io
-hello world
+Hi, Im Minhwa
 =======
 ### Skills
 <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>
