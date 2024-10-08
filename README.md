@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# alsghk05.github.io
+# Hello, Im Minhwa
 
 =======
 
