@@ -18,8 +18,7 @@
 |------|---|---|---|---|
 |[도서 정보 기반 베스트 셀러 예측]()|테스트2|테스트3|테스트2|테스트3|
 |[항만 내 선박 대기시간 예측](https://github.com/alsghk05/alsghk05.github.io/tree/main/%ED%95%AD%EB%A7%8C%20%EB%82%B4%20%EC%84%A0%EB%B0%95%20%EB%8C%80%EA%B8%B0%EC%8B%9C%EA%B0%84%20%EC%98%88%EC%B8%A1(%ED%9A%8C%EA%B7%80))|테스트2|테스트3|테스트2|테스트3|
-|[장애인 특별교통수단 대기시간 분석](https://github.com/alsghk05/alsghk05.github.io/tree/main/%EC%A7%80%EC%97%AD%EB%B3%84%20%ED%8A%B9%EB%B3%84%EA%B5%90%ED%86%B5%EC%B0%A8%EB%9F%89%20%EB%8C%80%EA%B8%B0%EC%8B%9C%EA%B0%84%20%EC%98%88%EC%B8%A1)|테스트2|테스트3|테스트2|<img src=https://img.shields.io/github/issues-pr/{alsghk05}/{alsghk05.github.io
-/지역별 특별교통차량 대기시간 예측}.svg/>|
+|[장애인 특별교통수단 대기시간 분석](https://github.com/alsghk05/alsghk05.github.io/tree/main/%EC%A7%80%EC%97%AD%EB%B3%84%20%ED%8A%B9%EB%B3%84%EA%B5%90%ED%86%B5%EC%B0%A8%EB%9F%89%20%EB%8C%80%EA%B8%B0%EC%8B%9C%EA%B0%84%20%EC%98%88%EC%B8%A1)|테스트2|테스트3|테스트2|<img src=https://img.shields.io/github/issues-pr/{alsghk05}/{alsghk05.github.io}.svg/>|
 |[진주시 CCTV 입지 분석]()|테스트2|테스트3|테스트2|테스트3|
 |[약물 남용 방지 정보 제공 시스템]()|테스트2|테스트3|테스트2|테스트3|
 
