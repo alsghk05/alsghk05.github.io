@@ -1,10 +1,10 @@
-### Hi there🖐🏻
+## Hi there🖐🏻
 ![Hits](https://img.shields.io/github/followers/alsghk05?label=Follow)
 
 
 
 =======
-### Skills
+#### Skills
 <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Jupyter-F37626?style=square&logo=Jupyter&logoColor=white"/>
 <img src="https://img.shields.io/badge/C-A8B9CC?style=square&logo=C&logoColor=white"/><br/>
