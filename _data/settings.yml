@@ -4,7 +4,7 @@ analytics-id: #leave blank to not use Analytics
 #Subtitle
 subtitle:
   active: true
-  text: Yet Another Minimal Theme
+  text: 안녕하세요 data scientist 최민화입니다!
 
 #Nav 
 nav:
