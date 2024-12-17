@@ -7,6 +7,13 @@
    <li>효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측</li>
 </ol>
 
+<ol type = "a">👩🏻‍💻Open source projects
+   <li>효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측</li>
+</ol>
+
+<ol type = "a">👩🏻‍💻My latest Posts
+   <li>효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측</li>
+</ol>
  
 <h4 align="center">🛠️Tech Stack</h4>
   <h6 align="center"> Strength </p>
