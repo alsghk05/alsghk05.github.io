@@ -2,7 +2,7 @@
 analytics-id: #leave blank to not use Analytics
 
 #Subtitle
-subtitle:
+subtitle: 최민화의 이력서
   active: true
   text: 안녕하세요 data scientist 최민화입니다!
 
