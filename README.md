@@ -1,4 +1,4 @@
-<h2> 🖐🏻Hi, I'm Minhwa
+<h2> 🖐🏻Hi, I'm Minhwa </h2>
  
 ![Hits](https://img.shields.io/github/followers/alsghk05?label=Follow)
 
