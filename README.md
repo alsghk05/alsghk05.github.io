@@ -45,8 +45,6 @@
 
 <br>
 <br>
-<h4 align="center">💜Where to find me💜</h4>
-<p align="center">
+### 💜Where to find me💜
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp
   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-</p>
