@@ -5,13 +5,13 @@ My name is Minhwa Choi. I am interested in AI technology such as machine learnin
 
 
 <h3 align="center">💜Tech Stack💜</h3>
-<p align="center"> Strength </p>
+<p> Strength </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>&nbsp 
   <img src="https://img.shields.io/badge/NumPy-013243?style=square&logo=NumPy&logoColor=white"/>
   <img src="https://img.shields.io/badge/pandas-150458?style=square&logo=Pandas&logoColor=white"/>
   <br>
-<p align="center"> Weakness </p>
+<p> Weakness </p>
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-1572B6?style=flat-square&logo=css3&logoColor=white"/></a>&nbsp 
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/></a>&nbsp 
