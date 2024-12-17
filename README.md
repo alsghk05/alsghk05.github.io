@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Minhwa's%20profile&fontSize=50" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=_hexcode&height=300&section=header&text=Minhwa's%20profile&fontColor=d6ace6&fontSize=50" />
 
 <h3> 🖐🏻 Hi, I'm Minhwa </h3>
  
