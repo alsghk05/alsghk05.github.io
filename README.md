@@ -1,5 +1,6 @@
 ### Hi there🖐🏻
 ![Hits](https://img.shields.io/github/followers/alsghk05?label=Follow)
+
 My name is Minhwa Choi. I am interested in AI technology such as machine learning and deep learning, and I am working on several projects related to it. I use Python as my main language for development. Then take your time and have a good time watching!
 
 <h3 align="center">🛠 Tech Stack 🛠</h3>
