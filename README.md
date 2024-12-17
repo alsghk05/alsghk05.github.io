@@ -1,7 +1,7 @@
-### 🖐🏻Hi there
+### 🖐🏻Hi, I'm Minhwa
 ![Hits](https://img.shields.io/github/followers/alsghk05?label=Follow)
 
- My name is Minhwa Choi. I am interested in AI technology such as machine learning and deep learning, and I am working on several projects related to it. I use Python as my main language for development. Then take your time and have a good time watching!
+ I am interested in AI technology such as machine learning and deep learning, and I am working on several projects related to it. I use Python as my main language for development. Then take your time and have a good time watching!
 
  ### 👩🏻‍💻Things I code with
    <li>효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측</li>
