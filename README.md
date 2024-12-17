@@ -14,11 +14,11 @@
 <br>
   
 ### 🖥️ Open source projects
-|Projects|Stars|Forks|Issues|Pull requests|
+|Projects|Discription|Forks|Issues|Pull requests|
 |------|---|---|---|---|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
+|효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측|테스트2|테스트3|테스트2|테스트3|
+|테스트1|테스트2|테스트3|테스트2|테스트3|
+|테스트1|테스트2|테스트3|테스트2|테스트3|
 
 <details>
 <summary> 
