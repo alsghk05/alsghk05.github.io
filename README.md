@@ -1,9 +1,9 @@
-### 🖐🏻Hi, I'm Minhwa
+<h2> 🖐🏻Hi, I'm Minhwa
 ![Hits](https://img.shields.io/github/followers/alsghk05?label=Follow)
 
- I am interested in AI technology such as machine learning and deep learning, and I am working on several projects related to it. I use Python as my main language for development. Then take your time and have a good time watching!
+ I am interested in AI technology such as machine learning and deep learning, and I am working on several projects related to it.🤖 I use Python as my main language for development.👩🏻‍💻 Then take your time and have a good time watching!
 
- ### Things I code with
+ ### 🛠️ Things I code with
   <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>
   <img src="https://img.shields.io/badge/NumPy-013243?style=square&logo=NumPy&logoColor=white"/>
   <img src="https://img.shields.io/badge/pandas-150458?style=square&logo=Pandas&logoColor=white"/>
@@ -11,12 +11,12 @@
   <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
 <br>
 
-### Open source projects
+### 🖥️ Open source projects
    <li>효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측</li>
 
 <details>
 <summary> 
-<h3> My latest Posts
+<h3> ✒️ My latest Posts
 </summary>
    <li>효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측</li>
 </details>
@@ -50,8 +50,8 @@
 <br>
 <br>
 
-### Where to find me
+### 💜 Where to find me
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
 
-### Where to contact me
+### 💡 Where to contact me
   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
