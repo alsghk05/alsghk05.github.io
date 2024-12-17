@@ -11,7 +11,7 @@ My name is Minhwa Choi. I am interested in AI technology such as machine learnin
   <img src="https://img.shields.io/badge/NumPy-013243?style=square&logo=NumPy&logoColor=white"/>
   <img src="https://img.shields.io/badge/pandas-150458?style=square&logo=Pandas&logoColor=white"/>
   <br>
-<p align="center"> Weakness </p>
+  <h6 align="center"> Weakness </p>
 <p align="center">
   <img src="https://img.shields.io/badge/C-A8B9CC?style=square&logo=C&logoColor=white"/>
   <img src="https://img.shields.io/badge/HTML5-1572B6?style=flat-square&logo=css3&logoColor=white"/></a>&nbsp 
