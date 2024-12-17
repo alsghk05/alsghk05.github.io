@@ -1,6 +1,6 @@
-# Hi there🖐🏻 Im mh
+### Hi there🖐🏻
+![Hits](https://img.shields.io/github/followers/alsghk05?label=Follow)
 
-=======
 
 
 =======
