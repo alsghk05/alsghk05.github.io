@@ -4,9 +4,12 @@
  I am interested in AI technology such as machine learning and deep learning, and I am working on several projects related to it. I use Python as my main language for development. Then take your time and have a good time watching!
 
  ### 👩🏻‍💻Things I code with
-   <li>효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측</li>
-</ol>
-
+  <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>&nbsp 
+  <img src="https://img.shields.io/badge/NumPy-013243?style=square&logo=NumPy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/pandas-150458?style=square&logo=Pandas&logoColor=white"/><br>
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
+  
 <ol type = "a">👩🏻‍💻Open source projects
    <li>효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측</li>
 </ol>
