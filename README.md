@@ -8,7 +8,7 @@
 </ol>
 
  
-<h4 align="center">💜Tech Stack💜</h4>
+<h4 align="center">🛠️Tech Stack</h4>
   <h6 align="center"> Strength </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>&nbsp 
