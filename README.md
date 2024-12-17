@@ -11,10 +11,11 @@
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
   <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
 <br>
-
+<br>
 ### 🖥️ Open source projects
    <li>효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측</li>
-
+<br>
+<br>
 <details>
 <summary> 
 <h3> ✒️ My latest Posts
@@ -53,6 +54,6 @@
 
 ### 💜 Where to find me
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
-
+<br>
 ### 💡 Where to contact me
   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
