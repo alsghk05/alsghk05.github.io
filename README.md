@@ -1,69 +1,156 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=ff9dff&height=300&section=header&text=최민화의%20이력서&fontColor=330066&fontSize=30" />
+# [YAMT - Yet Another Minimal Theme](https://yamt.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/249c3da6-7b23-4b57-915d-71934329e306/deploy-status)](https://yamt.netlify.app/)
+![](https://badgen.net/rubygems/dt/jekyll-yamt)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/PandaSekh/Jekyll-YAMT/issues)
+![GitHub forks](https://img.shields.io/github/forks/PandaSekh/Jekyll-YAMT?label=Fork%20it%21&style=social)
+## [Live Demo](https://yamt.netlify.app/)
 
-<h3> 🖐🏻 Hi, I'm Minhwa </h3>
- 
-![Hits](https://img.shields.io/github/followers/alsghk05?label=Follow)
+![Homepage](https://raw.githubusercontent.com/PandaSekh/Jekyll-YAMT/master/assets/img/screenshots/Screenshot.png?raw=true)
 
- I am interested in AI technology such as machine learning and deep learning, and I am working on several projects related to it🤖. I use Python as my main language for development👩🏻‍💻. Then take your time and have a good time watching💜!
+YAMT is a minimal [Jekyll](http://jekyllrb.com) theme focused on simplicity and ease-of-use. It has great modularity, allowing you to easily decide what you actually want on your website.
 
- ### 🛠️ Things I code with
-  <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>
-  <img src="https://img.shields.io/badge/NumPy-013243?style=square&logo=NumPy&logoColor=white"/>
-  <img src="https://img.shields.io/badge/pandas-150458?style=square&logo=Pandas&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
+## Contents
 
-<br>
-  
-### 🖥️ Open source projects
-|📚Projects|🔎Discription|🔖Forks|🔔Issues|📬Pull requests|
-|------|---|---|---|---|
-|[도서 정보 기반 베스트 셀러 예측]()|테스트2|테스트3|테스트2|테스트3|
-|[항만 내 선박 대기시간 예측](https://github.com/alsghk05/alsghk05.github.io/tree/main/%ED%95%AD%EB%A7%8C%20%EB%82%B4%20%EC%84%A0%EB%B0%95%20%EB%8C%80%EA%B8%B0%EC%8B%9C%EA%B0%84%20%EC%98%88%EC%B8%A1(%ED%9A%8C%EA%B7%80))|테스트2|테스트3|테스트2|테스트3|
-|[장애인 특별교통수단 대기시간 분석](https://github.com/alsghk05/alsghk05.github.io/tree/main/%EC%A7%80%EC%97%AD%EB%B3%84%20%ED%8A%B9%EB%B3%84%EA%B5%90%ED%86%B5%EC%B0%A8%EB%9F%89%20%EB%8C%80%EA%B8%B0%EC%8B%9C%EA%B0%84%20%EC%98%88%EC%B8%A1)|테스트2|테스트3|테스트2|<img src=https://img.shields.io/github/issues-pr/{alsghk05}/{alsghk05.github.io}.svg/>|
-|[진주시 CCTV 입지 분석]()|테스트2|테스트3|테스트2|테스트3|
-|[약물 남용 방지 정보 제공 시스템]()|테스트2|테스트3|테스트2|테스트3|
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Customize](#options)
+  - [Basics](#Basics)
+  - [Typography](#Typography)
+  - [Header](#header)
+  - [Home](#home)
+  - [Post](#post)
+  - [Contact Form](#contact-form)
+- [Development](#development)
+- [Credits](#credits)
+- [License](#license)
 
-<details>
-<summary> 
-<h3> ✒️ My latest Posts
-</summary>
-   <li>도서 정보 기반 베스트 셀러 예측</li>
-   <li>효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측</li>
-   <li>장애인 특별교통수단의 대기시간에 영향을 미치는 주요 요인 분석과 최적화 전략</li>
-   <li>범죄예방을위한 우선순위기반 CCTV 최적입지분석</li>
-   <li>NEO-FFI-R 성격 유형 검사 기반 약물 남용 방지 정보 제공 시스템</li>
-</details>
- 
- <!-- 
-<h4 align="center">🛠️Tech Stack</h4>
-  <h6 align="center"> Strength </p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>&nbsp 
-  <img src="https://img.shields.io/badge/NumPy-013243?style=square&logo=NumPy&logoColor=white"/>
-  <img src="https://img.shields.io/badge/pandas-150458?style=square&logo=Pandas&logoColor=white"/><br>
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
-  <br>
-  <h6 align="center"> Weakness </p>
-<p align="center">
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
-  <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white"/><br>
-  <img src="https://img.shields.io/badge/HTML5-1572B6?style=flat-square&logo=css3&logoColor=white"/></a>&nbsp 
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/></a>&nbsp 
-  <img src="https://img.shields.io/badge/Javascript-ffb13b?style=flat-square&logo=javascript&logoColor=white"/></a>&nbsp 
-  <img src="https://img.shields.io/badge/Mysql-E6B91E?style=flat-square&logo=MySql&logoColor=white"/></a>&nbsp 
-  <img src="https://img.shields.io/badge/aws-333664?style=flat-square&logo=amazon-aws&logoColor=white"/></a>&nbsp 
-</p>
+## Features
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=alsghk05&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=alsghk05)
-(https://github.com/anuraghazra/github-readme-stats)
--->
+- Minimal and clean design.
+- Fully modular: activate and load only what you really need.
+- Works great on mobile and smaller screens.
+- Works on Github Pages.
+- Supports [Disqus](https://disqus.com/) comments activated only on button press, if you activate them.
+- [Google Analytics](https://www.google.com/analytics/) support.
+- [Open Graph](https://ogp.me/) and [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started) support to better index the website content on search engines and social networks.
+- [MathJAX](https://www.mathjax.org/) and [LaTeX](https://www.latex-project.org/) optional support. Write beautiful math!
+- [RSS](https://github.com/jekyll/jekyll-feed) support.
+- Beautiful [Syntax Highlight](https://yamt.netlify.app/2020/05/19/special-formatting.html#syntax-highlight). Write some code and show it in a graceful way.
 
-<br>
+## Screenshots
 
-### 💜 Where to find me
-  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
-### 💡 Where to contact me
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+Mobile:  
+![Mobile](https://raw.githubusercontent.com/PandaSekh/Jekyll-YAMT/master/assets/img/screenshots/Screenshot_mobile.png?raw=true)
+
+Code Highlight:  
+![Code](https://raw.githubusercontent.com/PandaSekh/Jekyll-YAMT/master/assets/img/screenshots/Screenshot_code_highlight.png)
+
+Minimal:  
+![Minimal](https://raw.githubusercontent.com/PandaSekh/Jekyll-YAMT/master/assets/img/screenshots/Screenshot_minimal.png?raw=true)
+
+## Installation
+
+There are four way to use YAMT: Netlify (suggested, as this theme has a contact module built-in working only on Netlify), Github Pages, as a gem-based theme, by forking this repo or by copying all the files into your directory.
+
+### Download the files
+You can [download the files](https://github.com/PandaSekh/Jekyll-YAMT/releases/latest) and add them in your directory to start working.
+
+### Netlify
+
+1. [Fork this repo](https://github.com/PandaSekh/Jekyll-YAMT/generate). You can copy only master, set it to private or public and name it however you want.
+2. Go to [Netlify](https://app.netlify.com/), create a New site from Git, choose your repo or all repos, no difference. Back to Netlify, select the recently forked repo.
+3. Owner and branch are good to go. In build command write `bundle exec jekyll build` and publishing directory should be `_site/`.
+4. Deploy. Your site will shortly be available. Under domain settings you can change your subdomain, or add a primary level one. 
+
+### Github Pages
+
+Github Pages uses the [--safe flag](https://jekyllrb.com/docs/configuration/options/) to build jekyll websites, which disable custom plugins, caching to disk and ignore symbolic links. Because of that, I suggest you to use any other method. Netlify works great with a 5 minute config, so I suggest you use it.
+
+1. [Fork this repo](https://github.com/PandaSekh/Jekyll-YAMT/generate).
+2. Create a new branch in your repo and call it `gh-pages`.
+3. Publish your website and choose gh-pages as the target branch.
+
+### Remote theme
+
+[Follow these instructions](https://help.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-using-jekyll).
+
+### Gem-based theme 
+1. Add this line to your Jekyll site's `Gemfile`:
+
+    ```ruby
+    gem "jekyll-yamt"
+    ```
+
+2. And add this line to your Jekyll site's `_config.yml`:
+
+    ```yaml
+    theme: jekyll-yamt
+    ```
+
+3. And then execute:
+
+    ``` bash
+    $ bundle
+    ```
+
+4. Or install it yourself as:
+    
+    ``` bash
+    $ gem install jekyll-yamt
+    ```
+
+#### ERROR: There was an error while loading `jekyll-yamt.gemspec`: No such file or directory - git ls-files -z. Bundler cannot continue.
+If you encounter this error when running `bundle install`, please make sure git is installed.
+
+## Customize
+
+YAMT is easily customizable. If you don't need a functionality, just deactivate it in `_data/settings.yml`.
+Most of the customizable things are self-explanatory and found in the `_data` folder and in the `_config.yml`.
+
+### Basics
+
+Under the `_data` folder there are three files: pages, settings and social.
+In pages you can add other pages that will show up in the nav-
+In social you can add your socials that will show up in the nav. To add a social, find a suitable icon on [FontAwesome](https://fontawesome.com/) and add it's name in the name tag.
+Brand defines Font Awesome's font type (fas is solid, fab is brand).
+Out of the box this theme has support colors for a bunch of social. If your social isn't supported, just add the color in the header.css 
+
+In `_data/settings.yml` you can activate or deactivate various functions of the theme, like analytics, disqus comments, related posts and so on.
+
+### Typography
+By default YAMT uses the System Font STack, which greatly reduces load times. If you want to use the old Font Stack, in `assets/main.scss` change `typography` to `typography-old`.
+
+### Header
+In `_data/settings.yml` you can choose to hide or show the subtitle, the page navigation or the social icons.
+
+### Home
+In `_data/settings.yml` you can choose to hide or show the posts infos (date and read-time) and the featured image.
+
+### Post
+In `_data/settings.yml` you can choose to hide or show the post infos, categories, related posts and comments.
+Note that by removing categories the Categories Archives will no longer be reachable.
+
+### Contact Form
+YAMT has a built-in contact form builded using [Netlify](https://app.netlify.com/) free form functionality. To make it work you only need the line `data-netlify="true"` when declaring a form.  
+If you don't want to use Netlify, remove the line `data-netlify="true"`.
+
+## Development
+
+[Contributions are welcomed and encouraged](https://github.com/PandaSekh/Jekyll-YAMT/issues).
+
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `yamt.gemspec` accordingly.
+
+## Credits
+Theme designed and created by [Alessio Franceschi](https://github.com/PandaSekh/).
+Inspired by [Lagrange by LeNPaul](https://lenpaul.github.io/Lagrange/).  
+Also great help from [this blog](https://blog.webjeda.com/), I've used this even before I created this theme.  
+Images from [Unsplash](https://unsplash.com/).
+
+## License
+The theme is available as open source under the terms of the [MIT License](https://github.com/PandaSekh/Jekyll-YAMT/blob/master/LICENSE.txt).
