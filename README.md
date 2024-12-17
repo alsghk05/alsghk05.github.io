@@ -3,10 +3,10 @@
 
  My name is Minhwa Choi. I am interested in AI technology such as machine learning and deep learning, and I am working on several projects related to it. I use Python as my main language for development. Then take your time and have a good time watching!
 
-<ol type = "a">💜Things I code with 
+<h3><ol type = "a">💜Things I code with </h3>
   <li>효율적인 항만 운영 시스템을 위한 머신러닝 기반 항만 내 선박 대기시간 예측</li>
 </ol>
-<h3 align="center">💜Tech Stack💜</h3>
+<h4 align="center">💜Tech Stack💜</h4>
   <h6 align="center"> Strength </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>&nbsp 
@@ -33,7 +33,7 @@
 
 <br>
 <br>
-<h3 align="center">💜Where to find me💜</h3>
+<h4 align="center">💜Where to find me💜</h4>
 <p align="center">
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp
   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
