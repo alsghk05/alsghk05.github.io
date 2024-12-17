@@ -14,7 +14,7 @@
 <br>
   
 ### 🖥️ Open source projects
-|Projects|Discription|Forks|Issues|Pull requests|
+|📚Projects|🔎Discription|🔖Forks|🔔Issues|📬Pull requests|
 |------|---|---|---|---|
 |도서 정보 기반 베스트 셀러 예측|테스트2|테스트3|테스트2|테스트3|
 |항만 내 선박 대기시간 예측|테스트2|테스트3|테스트2|테스트3|
