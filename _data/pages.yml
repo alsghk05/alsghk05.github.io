@@ -1,5 +1,0 @@
-pages:
-  - {name: 'About', url: 'about.html'}
-  - {name: 'Contact', url: 'contact.html'}
-  - {name: 'Archive', url: 'archive.html'}
-  - {name: 'Git Page', url: 'https://github.com/alsghk05/alsghk05.github.io'}
