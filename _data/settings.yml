@@ -2,9 +2,9 @@
 analytics-id: #leave blank to not use Analytics
 
 #Subtitle
-subtitle: 최민화의 이력서
+subtitle: Choi Minhwa's resume  
   active: true
-  text: 안녕하세요 data scientist 최민화입니다!
+  text: Hello, I am Choi Minhwa , a data scientist!
 
 #Nav 
 nav:
