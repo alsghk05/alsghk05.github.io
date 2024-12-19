@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=ff9dff&height=300&section=header&text=최민화의%20이력서&fontColor=330066&fontSize=30" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=ff9dff&height=300&section=header&text=Minhwa's%20resume&fontColor=330066&fontSize=30" />
 
 <h3> 🖐🏻 Hi, I'm Minhwa </h3>
  
