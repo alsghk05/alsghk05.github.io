@@ -1,12 +1,12 @@
 ---
-title: This is YAMT!
+title: About me
 layout: post
 categories: [Typography, Markdown, Tips]
 image: /assets/img/logo.jpg
-description: "Welcome to YAMT - Yet Another Minimal Theme."
+description: "A brief introduction to myself"
 ---
 
-Welcome to YAMT - Yet Another Minimal Theme. YAMT is a minimal Jekyll theme focused on simplicity and ease-of-use. It has great modularity, allowing you to easily decide what you actually want on your website.
+I am interested in AI technology such as machine learning and deep learning, and I am working on several projects related to it🤖. I use Python as my main language for development👩🏻‍💻. Then take your time and have a good time watching💜!
 
 * hello
 {:toc}
