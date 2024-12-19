@@ -2,9 +2,9 @@
 analytics-id: #leave blank to not use Analytics
 
 #Subtitle
-subtitle: Choi Minhwa's resume  
+subtitle: 'Choi Minhwa's resume'
   active: true
-  text: Hello, I am Choi Minhwa , a data scientist!
+  text: 'Hello, I am Choi Minhwa , a data scientist!'
 
 #Nav 
 nav:
