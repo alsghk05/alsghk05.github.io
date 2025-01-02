@@ -11,11 +11,57 @@
 }
 
 .user-projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   margin: 20px auto;
+
   img {
-    max-width: 100%;
+    max-width: 40%; /* 이미지 크기 줄이기 */
     height: auto;
     border-radius: 5px;
+    margin-right: 20px; /* 이미지와 텍스트 간 간격 */
+  }
+
+  .contents-right {
+    flex: 1; /* 남은 공간 채우기 */
+    margin-top: 0;
+    p {
+      margin-top: 10px; /* 텍스트 간 여백 */
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column; /* 모바일에서는 이미지와 텍스트를 세로로 배치 */
+    img {
+      max-width: 100%; /* 모바일에서 이미지가 가로 전체 차지 */
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.project-link {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px 15px;
+  color: $main;
+  background-color: transparent;
+  border: 1px solid $main;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+
+  &:hover,
+  &:active {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
   }
   h5 {
     margin: 0;
@@ -36,13 +82,6 @@
   }
 }
 
-.contents-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    margin-top: -5%;
-    width: 48%;
-  }
-}
 .images-right {
   @media only screen and (min-width: $cut) {
     float: right;
@@ -64,38 +103,5 @@
     @media only screen and (min-width: $cut) {
       float: left;
     }
-  }
-}
-
-.project-link {
-  display: inline-block;
-  margin: 10px 0px;
-  padding: 5px;
-  color: $main;
-  background-color: transparent;
-  border: 1px solid $main;
-  border-radius: 10px;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.3s ease-out,
-              background-color 0.3s ease-out,
-              border-color 0.3s ease-out;
-  &:hover {
-    background-color: $purple;
-    border-color: $purple;
-    color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
-  }
-  &:active {
-    background-color: $purple;
-    border-color: $purple;
-    color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
   }
 }
