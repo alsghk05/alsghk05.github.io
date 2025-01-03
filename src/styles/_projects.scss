@@ -17,13 +17,15 @@
 
 .images-left, .images-right {
   flex: 0 0 auto; /* 사진 크기를 고정 */
-  max-width: 50px; /* 사진을 50px로 축소 */
+  width: 50px; /* 그림의 너비를 50px로 설정 */
+  height: 50px; /* 그림의 높이를 50px로 설정 */
   margin-right: 15px; /* 텍스트와 여백 */
 }
 
 .images-left img, .images-right img {
-  width: 50px; /* 그림을 50px로 설정 */
-  height: auto; /* 비율 유지 */
+  width: 50px; /* 이미지 너비를 50px로 설정 */
+  height: 50px; /* 이미지 높이를 50px로 설정 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 잘라냄 */
   border-radius: 5px;
 }
 
