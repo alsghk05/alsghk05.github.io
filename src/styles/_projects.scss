@@ -5,97 +5,82 @@
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
-  @media only screen and (min-width: $cut) {
-    width: 80%;
-  }
 }
 
 .user-projects {
+  display: flex; /* 사진과 내용을 나란히 배치 */
+  align-items: center; /* 세로 정렬 */
   margin: 20px auto;
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  h5 {
-    margin: 0;
-  }
-  li {
-    color: $main;
-    font-size: 1.1rem;
-  }
-  p {
-    margin-right: 5px;
-  }
+  border-bottom: 1px solid #ddd; /* 구분선 추가 */
+  padding-bottom: 20px;
 }
 
-.contents {
-  @media only screen and (min-width: $cut) {
-    margin-left: 0;
-    width: 48%;
-  }
+.images-left, .images-right {
+  flex: 0 0 auto; /* 사진 크기를 고정 */
+  max-width: 150px; /* 사진 최대 크기 제한 */
+  margin-right: 20px; /* 텍스트와 여백 */
 }
 
-.contents-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    margin-top: -5%;
-    width: 48%;
-  }
-}
-.images-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    width: 48%;
-  }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: right;
-    }
-  }
+.images-left img, .images-right img {
+  width: 100%;
+  height: auto; /* 사진 비율 유지 */
+  border-radius: 5px;
 }
 
-.images-left {
-  @media only screen and (min-width: $cut) {
-    float: left;
-    width: 48%;
-  }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: left;
-    }
-  }
+.contents-right, .contents {
+  flex: 1; /* 텍스트가 나머지 공간 차지 */
+}
+
+.contents-right h4, .contents h4 {
+  margin: 0 0 10px 0; /* 제목 간격 */
+  font-size: 1.2em;
+}
+
+.contents-right p, .contents p {
+  margin: 0 0 10px 0; /* 문단 간격 */
 }
 
 .project-link {
   display: inline-block;
-  margin: 10px 0px;
-  padding: 5px;
-  color: $main;
+  margin: 10px 0;
+  padding: 5px 10px;
+  color: #007BFF;
   background-color: transparent;
-  border: 1px solid $main;
+  border: 1px solid #007BFF;
   border-radius: 10px;
   text-align: center;
-  outline: none;
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s ease-out,
-              background-color 0.3s ease-out,
-              border-color 0.3s ease-out;
-  &:hover {
-    background-color: $purple;
-    border-color: $purple;
-    color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+}
+
+.project-link:hover {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+  color: #fff;
+}
+
+.project-link:active {
+  background-color: #4a47a3;
+  border-color: #4a47a3;
+  color: #fff;
+}
+
+/* 반응형 스타일 */
+@media only screen and (max-width: 768px) {
+  .user-projects {
+    flex-direction: column; /* 모바일에서는 세로 배치 */
+    align-items: flex-start; /* 왼쪽 정렬 */
   }
-  &:active {
-    background-color: $purple;
-    border-color: $purple;
-    color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
+
+  .images-left, .images-right {
+    max-width: 100%; /* 사진 크기 제한 해제 */
+    margin-right: 0; /* 여백 제거 */
+    margin-bottom: 10px; /* 아래쪽 여백 추가 */
+  }
+
+  .contents-right, .contents {
+    width: 100%; /* 텍스트 너비 조정 */
+    margin-left: 0;
   }
 }
