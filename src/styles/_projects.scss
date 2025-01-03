@@ -5,67 +5,29 @@
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
-  min-height: 67vh;
   @media only screen and (min-width: $cut) {
     width: 80%;
   }
 }
 
 .user-projects {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+  margin: 20px auto;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  h5 {
+    margin: 0;
+  }
+  li {
+    color: $main;
+    font-size: 1.1rem;
+  }
+  p {
+    margin-right: 5px;
+  }
 }
-
-.number-icon {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.number-icon span {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-right: 10px;
-}
-
-.number-icon img {
-  width: 24px;
-  height: 24px;
-}
-
-.contents-right {
-  flex: 1;
-}
-
-.contents-right h4 {
-  font-size: 18px;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.contents-right p {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.project-link {
-  font-size: 14px;
-  color: #007bff;
-  text-decoration: none;
-}
-
-.project-link:hover {
-  text-decoration: underline;
-}
-
 
 .contents {
   @media only screen and (min-width: $cut) {
@@ -74,6 +36,13 @@
   }
 }
 
+.contents-right {
+  @media only screen and (min-width: $cut) {
+    float: right;
+    margin-top: -5%;
+    width: 48%;
+  }
+}
 .images-right {
   @media only screen and (min-width: $cut) {
     float: right;
@@ -89,11 +58,44 @@
 .images-left {
   @media only screen and (min-width: $cut) {
     float: left;
-    width: 30%;
+    width: 48%;
   }
   img {
     @media only screen and (min-width: $cut) {
       float: left;
     }
+  }
+}
+
+.project-link {
+  display: inline-block;
+  margin: 10px 0px;
+  padding: 5px;
+  color: $main;
+  background-color: transparent;
+  border: 1px solid $main;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  &:hover {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+  &:active {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
   }
 }
