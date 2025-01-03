@@ -8,27 +8,27 @@
 }
 
 .user-projects {
-  display: flex; /* 사진과 내용을 나란히 배치 */
-  align-items: center; /* 세로 정렬 */
+  display: flex; /* 사진과 텍스트를 나란히 배치 */
+  align-items: center; /* 수직 중앙 정렬 */
   margin: 20px auto;
   border-bottom: 1px solid #ddd; /* 구분선 추가 */
   padding-bottom: 20px;
 }
 
 .images-left, .images-right {
-  flex: 0 0 auto; /* 사진 크기 고정 */
-  max-width: 50px; /* 사진 크기를 축소 (원래 150px) */
-  margin-right: 0; /* 텍스트와 여백 */
+  flex: 0 0 auto; /* 사진 크기를 고정 */
+  max-width: 50px; /* 사진을 50px로 축소 */
+  margin-right: 15px; /* 텍스트와 여백 */
 }
 
 .images-left img, .images-right img {
-  width: 100%; /* max-width에 맞게 조정 */
-  height: auto; /* 사진 비율 유지 */
+  width: 50px; /* 그림을 50px로 설정 */
+  height: auto; /* 비율 유지 */
   border-radius: 5px;
 }
 
 .contents-right, .contents {
-  flex: 1; /* 텍스트가 나머지 공간 차지 */
+  flex: 1; /* 텍스트가 나머지 공간을 차지 */
 }
 
 .contents-right h4, .contents h4 {
@@ -74,7 +74,9 @@
   }
 
   .images-left, .images-right {
-    max-width: 25px; /* 모바일 화면에서는 더 축소 */
+    max-width: 50px; /* 사진을 50px로 축소 */
+    margin-right: 0; /* 여백 제거 */
+    margin-bottom: 10px; /* 아래쪽 여백 추가 */
   }
 
   .contents-right, .contents {
