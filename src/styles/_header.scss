@@ -3,11 +3,16 @@
   display: flex;
   vertical-align: bottom;
   width: 100%;
-  min-height: 20vh; /* 더 작게 조정 */
+  height: 33vh; /* header 높이 설정 */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  .particles-js-canvas-el {
+    width: 100% !important;
+    height: 33vh !important; /* canvas 높이 동일하게 설정 */
+  }
 }
+
 
 .header {
   z-index: 1;
