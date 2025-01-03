@@ -17,8 +17,8 @@
 
 .images-left, .images-right {
   flex: 0 0 auto; /* 사진 크기 고정 */
-  max-width: 100px; /* 사진 크기를 축소 (원래 150px) */
-  margin-right: 20px; /* 텍스트와 여백 */
+  max-width: 70px; /* 사진 크기를 축소 (원래 150px) */
+  margin-right: 0; /* 텍스트와 여백 */
 }
 
 .images-left img, .images-right img {
