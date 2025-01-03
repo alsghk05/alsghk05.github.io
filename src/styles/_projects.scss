@@ -13,9 +13,11 @@
 .user-projects {
   margin: 20px auto;
   img {
-    max-width: 100%;
+    max-width: 80%; /* 이미지 크기 축소 */
     height: auto;
     border-radius: 5px;
+    margin-right: 0; /* 오른쪽 여백 제거 */
+    margin-left: 0; /* 왼쪽 여백 제거 */
   }
   h5 {
     margin: 0;
@@ -33,6 +35,7 @@
   @media only screen and (min-width: $cut) {
     margin-left: 0;
     width: 48%;
+    padding-right: 0; /* 이미지와 글자 사이 여백 제거 */
   }
 }
 
@@ -51,6 +54,9 @@
   img {
     @media only screen and (min-width: $cut) {
       float: right;
+      max-width: 80%; /* 이미지 크기 축소 */
+      margin-right: 0; /* 오른쪽 여백 제거 */
+      margin-left: 0; /* 왼쪽 여백 제거 */
     }
   }
 }
@@ -63,6 +69,9 @@
   img {
     @media only screen and (min-width: $cut) {
       float: left;
+      max-width: 80%; /* 이미지 크기 축소 */
+      margin-right: 0; /* 오른쪽 여백 제거 */
+      margin-left: 0; /* 왼쪽 여백 제거 */
     }
   }
 }
