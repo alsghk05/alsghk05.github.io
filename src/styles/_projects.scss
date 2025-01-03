@@ -16,13 +16,13 @@
 }
 
 .images-left, .images-right {
-  flex: 0 0 auto; /* 사진 크기를 고정 */
-  max-width: 150px; /* 사진 최대 크기 제한 */
+  flex: 0 0 auto; /* 사진 크기 고정 */
+  max-width: 100px; /* 사진 크기를 축소 (원래 150px) */
   margin-right: 20px; /* 텍스트와 여백 */
 }
 
 .images-left img, .images-right img {
-  width: 100%;
+  width: 100%; /* max-width에 맞게 조정 */
   height: auto; /* 사진 비율 유지 */
   border-radius: 5px;
 }
@@ -74,9 +74,7 @@
   }
 
   .images-left, .images-right {
-    max-width: 100%; /* 사진 크기 제한 해제 */
-    margin-right: 0; /* 여백 제거 */
-    margin-bottom: 10px; /* 아래쪽 여백 추가 */
+    max-width: 80px; /* 모바일 화면에서는 더 축소 */
   }
 
   .contents-right, .contents {
