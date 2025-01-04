@@ -32,15 +32,14 @@
   margin: 5px auto;
 }
 
-.goal-icon {
-  color: #2196f3; /* 초록색 */
+.user-info {
+  display: flex;
+  align-items: center; /* 세로로 가운데 정렬 */
 }
-.passion-icon {
-  color: #f44336; /* 빨간색 */
-}
-.perseverance-icon {
-  color: #2196f3; /* 파란색 */
-}
-.time-icon {
-  color: #fa00e5; /* 오렌지색 */
+
+.profile-photo {
+  width: 100px; /* 이미지 크기 조정 */
+  height: 100px; /* 이미지 크기 조정 */
+  border-radius: 50%; /* 원형으로 만들기 */
+  margin-right: 20px; /* 이미지와 텍스트 사이 여백 */
 }
