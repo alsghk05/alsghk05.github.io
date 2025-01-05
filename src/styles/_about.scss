@@ -31,15 +31,3 @@
   text-align: center;
   margin: 5px auto;
 }
-
-.user-info {
-  display: flex; /* 이미지와 텍스트를 나란히 배치 */
-  align-items: center; /* 텍스트와 이미지를 세로로 가운데 정렬 */
-}
-
-.profile-photo {
-  width: 50px; /* 이미지 가로 크기 */
-  height: 50px; /* 이미지 세로 크기 */
-  border-radius: 50%; /* 이미지 원형 처리 */
-  object-fit: cover; /* 이미지 비율 유지 */
-}
