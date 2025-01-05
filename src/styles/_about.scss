@@ -33,13 +33,13 @@
 }
 
 .user-info {
-  display: flex;
-  align-items: center; /* 세로로 가운데 정렬 */
+  display: flex; /* 이미지와 텍스트를 나란히 배치 */
+  align-items: center; /* 텍스트와 이미지를 세로로 가운데 정렬 */
 }
 
 .profile-photo {
-  width: 100px; /* 이미지 크기 조정 */
-  height: 100px; /* 이미지 크기 조정 */
-  border-radius: 50%; /* 원형으로 만들기 */
-  margin-right: 20px; /* 이미지와 텍스트 사이 여백 */
+  width: 50px; /* 이미지 가로 크기 */
+  height: 50px; /* 이미지 세로 크기 */
+  border-radius: 50%; /* 이미지 원형 처리 */
+  object-fit: cover; /* 이미지 비율 유지 */
 }
