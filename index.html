@@ -1,0 +1,700 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>최민화</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="19232bd0-19cb-8045-8d2d-fbac5ca56a91" class="page sans"><header><h1 class="page-title">최민화</h1><p class="page-description"></p></header><div class="page-body"><div id="19232bd0-19cb-81ef-b7e8-ece05bf57299" class="column-list"><div id="19232bd0-19cb-818b-aafb-d16b69d90457" style="width:37.5%" class="column"><figure id="19232bd0-19cb-810d-a3b3-d309ee87f6eb" class="image"><a href="3545%EC%B5%9C%EB%AF%BC%ED%99%94.jpg"><img style="width:199.1875px" src="3545%EC%B5%9C%EB%AF%BC%ED%99%94.jpg"/></a></figure><h3 id="19232bd0-19cb-813c-9b9e-c67fdb3c9ac3" class="block-color-blue"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>C</mi><mi>h</mi><mi>o</mi><mi>i</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Choi}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.07153em;color:#000000;">C</span><span class="mord mathnormal" style="color:#000000;">h</span><span class="mord mathnormal" style="color:#000000;">o</span><span class="mord mathnormal" style="color:#000000;">i</span></span></span></span></span></span><span>﻿</span></span> <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>M</mi><mi>i</mi><mi>n</mi><mi>h</mi><mi>w</mi><mi>a</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Minhwa }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.10903em;color:#000000;">M</span><span class="mord mathnormal" style="color:#000000;">inh</span><span class="mord mathnormal" style="margin-right:0.02691em;color:#000000;">w</span><span class="mord mathnormal" style="color:#000000;">a</span></span></span></span></span></span><span>﻿</span></span></h3><blockquote id="19232bd0-19cb-811e-8b83-ce23e38da33e" class="block-color-default">South Korea<br/>2001. 12. 22<br/><p id="19232bd0-19cb-8026-b697-d2e953a5a7b5" class="">Tel. 010-2432-5745<br/>E. 220161105@gnu.ac.kr<br/></p></blockquote><hr id="19232bd0-19cb-81da-82fa-cf2e0223acab"/><h3 id="19232bd0-19cb-8104-8c8a-e8fad26cf9ff" class="block-color-blue"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>N</mi><mi>a</mi><mi>v</mi><mi>i</mi><mi>g</mi><mi>a</mi><mi>t</mi><mi>o</mi><mi>r</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Navigator }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.10903em;color:#000000;">N</span><span class="mord mathnormal" style="color:#000000;">a</span><span class="mord mathnormal" style="margin-right:0.03588em;color:#000000;">v</span><span class="mord mathnormal" style="color:#000000;">i</span><span class="mord mathnormal" style="margin-right:0.03588em;color:#000000;">g</span><span class="mord mathnormal" style="color:#000000;">a</span><span class="mord mathnormal" style="color:#000000;">t</span><span class="mord mathnormal" style="margin-right:0.02778em;color:#000000;">or</span></span></span></span></span></span><span>﻿</span></span></h3><p id="19232bd0-19cb-810a-86e1-efc66d56e68b" class=""><mark class="highlight-default">①   </mark><mark class="highlight-default"><a href="https://www.notion.so/19232bd019cb80458d2dfbac5ca56a91?pvs=21">Awards</a></mark><mark class="highlight-default"> </mark></p><p id="19232bd0-19cb-8156-acbf-f154e3cc66e7" class=""><mark class="highlight-default">②   </mark><mark class="highlight-default"><a href="https://www.notion.so/19232bd019cb80458d2dfbac5ca56a91?pvs=21">Paper and Journals</a></mark><mark class="highlight-default"> </mark></p><p id="19232bd0-19cb-815c-b2db-d60535fb29f4" class=""><mark class="highlight-default">③   </mark><mark class="highlight-default"><a href="https://www.notion.so/19232bd019cb80458d2dfbac5ca56a91?pvs=21">Projects</a></mark></p><p id="1b032bd0-19cb-8063-bd02-ec45bfe07a16" class=""><mark class="highlight-default">④   </mark><mark class="highlight-default"><a href="https://www.notion.so/19232bd019cb80458d2dfbac5ca56a91?pvs=21">Experience</a></mark><mark class="highlight-default"> </mark></p><p id="19232bd0-19cb-81d9-bef0-c8529ce21c71" class=""><mark class="highlight-default">⑤   </mark><mark class="highlight-default"><a href="https://www.notion.so/19232bd019cb80458d2dfbac5ca56a91?pvs=21">Certificate</a></mark><mark class="highlight-default">  </mark></p><p id="1a032bd0-19cb-809d-a887-f8acc4db08f0" class=""><mark class="highlight-default"><strong>⑥</strong></mark><mark class="highlight-default">   </mark><mark class="highlight-default"><a href="https://www.notion.so/19232bd019cb80458d2dfbac5ca56a91?pvs=21">Skill</a></mark><mark class="highlight-default">  </mark></p><p id="1b032bd0-19cb-80fc-a93a-ce1db35a2dd0" class=""><strong>⑦</strong><mark class="highlight-default">   </mark><a href="https://www.notion.so/19232bd019cb80458d2dfbac5ca56a91?pvs=21">Links</a></p><p id="19232bd0-19cb-8152-8dcf-d4c0ed6d801f" class="">
+</p></div><div id="19232bd0-19cb-81bb-9f6c-c164860c10d6" style="width:87.5%" class="column"><h3 id="1ae32bd0-19cb-804f-8909-c1d6bce071ab" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>A</mi><mi>b</mi><mi>o</mi><mi>u</mi><mi>t</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{About}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="color:#000000;">A</span><span class="mord mathnormal" style="color:#000000;">b</span><span class="mord mathnormal" style="color:#000000;">o</span><span class="mord mathnormal" style="color:#000000;">u</span><span class="mord mathnormal" style="color:#000000;">t</span></span></span></span></span></span><span>﻿</span></span> <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>M</mi><mi>e</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Me}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.10903em;color:#000000;">M</span><span class="mord mathnormal" style="color:#000000;">e</span></span></span></span></span></span><span>﻿</span></span> </h3><h3 id="19232bd0-19cb-8103-a0ad-dd5582ba9373" class="block-color-blue"><mark class="highlight-default"><mark class="highlight-blue_background">데이터에서 인사이트를, AI로 변화를 만들어가는 창의적인 문제해결사</mark></mark></h3><p id="1ae32bd0-19cb-8087-af8b-cf012d26f648" class=""> 신입 데이터 사이언티스트 최민화입니다.<br/> 저는 다양한 데이터와 AI 기술을 접목해 창의적으로 문제를 해결하는 것을 좋아합니다. 같은 방법이라도 데이터에 따라 새로운 가치를 창출할 수 있다고 믿으며, 자연어 처리, 머신러닝, 딥러닝 등 다양한 기술을 활용한 분석 경험이 있습니다.<br/></p><p id="1ae32bd0-19cb-808e-9b8c-cb7180c02d31" class=""> 데이터를 단순히 분석하는 것을 넘어, 의미 있는 변화를 만들어내는 데이터 사이언티스트로 성장하고 싶습니다.</p><p id="19232bd0-19cb-81af-ad4c-dc7255da9ee4" class="">
+</p><h3 id="19232bd0-19cb-816b-a8ba-c08c80082cf8" class="block-color-blue"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>E</mi><mi>x</mi><mi>p</mi><mi>e</mi><mi>r</mi><mi>i</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>e</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Experience}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.05764em;color:#000000;">E</span><span class="mord mathnormal" style="color:#000000;">x</span><span class="mord mathnormal" style="color:#000000;">p</span><span class="mord mathnormal" style="margin-right:0.02778em;color:#000000;">er</span><span class="mord mathnormal" style="color:#000000;">i</span><span class="mord mathnormal" style="color:#000000;">e</span><span class="mord mathnormal" style="color:#000000;">n</span><span class="mord mathnormal" style="color:#000000;">ce</span></span></span></span></span></span><span>﻿</span></span>  <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>o</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>v</mi><mi>i</mi><mi>e</mi><mi>w</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{overview}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="color:#000000;">o</span><span class="mord mathnormal" style="margin-right:0.03588em;color:#000000;">v</span><span class="mord mathnormal" style="margin-right:0.02778em;color:#000000;">er</span><span class="mord mathnormal" style="margin-right:0.03588em;color:#000000;">v</span><span class="mord mathnormal" style="color:#000000;">i</span><span class="mord mathnormal" style="color:#000000;">e</span><span class="mord mathnormal" style="margin-right:0.02691em;color:#000000;">w</span></span></span></span></span></span><span>﻿</span></span> </h3><p id="19232bd0-19cb-814b-93c3-fc5f0dba7c6f" class="">학부 연구생 12개월</p><ul id="19232bd0-19cb-808f-a4e3-c2f7b261c7e1" class="bulleted-list"><li style="list-style-type:disc">경상국립대학교 컴퓨터공학부 BII 연구실  <mark class="highlight-gray">2024.02 - 현재</mark></li></ul><p id="19232bd0-19cb-8180-a6d1-fe0218eb56cf" class="">교내동아리 팀장 12개월</p><ul id="19232bd0-19cb-8001-aaef-c3759e7a78a2" class="bulleted-list"><li style="list-style-type:disc">이카루스(코딩 동아리)  <mark class="highlight-gray">2023.03 - 2024.02</mark></li></ul><p id="19232bd0-19cb-81f1-9446-cf66962b02cb" class="">인턴 2개월 </p><ul id="19232bd0-19cb-8140-8148-ef30bae78008" class="bulleted-list"><li style="list-style-type:disc">(주)엔스퀘어  <mark class="highlight-gray">2023.06 - 2023.08</mark></li></ul><p id="19232bd0-19cb-803b-9ca1-e5ad50b11c6f" class="">
+</p><h3 id="19232bd0-19cb-81d3-978a-e4c8ea15df04" class="block-color-blue"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>E</mi><mi>d</mi><mi>u</mi><mi>c</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Education }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.05764em;color:#000000;">E</span><span class="mord mathnormal" style="color:#000000;">d</span><span class="mord mathnormal" style="color:#000000;">u</span><span class="mord mathnormal" style="color:#000000;">c</span><span class="mord mathnormal" style="color:#000000;">a</span><span class="mord mathnormal" style="color:#000000;">t</span><span class="mord mathnormal" style="color:#000000;">i</span><span class="mord mathnormal" style="color:#000000;">o</span><span class="mord mathnormal" style="color:#000000;">n</span></span></span></span></span></span><span>﻿</span></span></h3><ul id="19232bd0-19cb-816b-97cf-df56a9718956" class="block-color-default bulleted-list"><li style="list-style-type:disc">경상국립대학교 컴퓨터공학부 빅데이터전공 <mark class="highlight-gray"> 2020.03 - 2025.02</mark><mark class="highlight-purple"> 학점 : 4.02 (/4.5)</mark></li></ul><ul id="19232bd0-19cb-8133-a66f-e28b0347d95c" class="bulleted-list"><li style="list-style-type:disc">데레사여자고등학교  <mark class="highlight-gray">2017.03 - 2020.02</mark></li></ul><p id="1a032bd0-19cb-80f7-a5c5-d539da0ba5e1" class="">
+</p><h3 id="19232bd0-19cb-8130-a5c2-effbfffc5479" class="block-color-blue"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>L</mi><mi>a</mi><mi>u</mi><mi>n</mi><mi>g</mi><mi>u</mi><mi>a</mi><mi>g</mi><mi>e</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Launguage}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="color:#000000;">L</span><span class="mord mathnormal" style="color:#000000;">a</span><span class="mord mathnormal" style="color:#000000;">u</span><span class="mord mathnormal" style="color:#000000;">n</span><span class="mord mathnormal" style="color:#000000;">gu</span><span class="mord mathnormal" style="color:#000000;">a</span><span class="mord mathnormal" style="margin-right:0.03588em;color:#000000;">g</span><span class="mord mathnormal" style="color:#000000;">e</span></span></span></span></span></span><span>﻿</span></span></h3><ul id="19232bd0-19cb-8140-94f8-de83b9506050" class="block-color-default bulleted-list"><li style="list-style-type:disc">영어</li></ul><p id="19232bd0-19cb-8141-8d30-f2884659911c" class="">
+</p></div></div><h1 id="19232bd0-19cb-8196-af52-f06777cdf3a2" class="block-color-blue"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>A</mi><mi>w</mi><mi>a</mi><mi>r</mi><mi>d</mi><mi>s</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Awards}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="color:#000000;">A</span><span class="mord mathnormal" style="margin-right:0.02691em;color:#000000;">w</span><span class="mord mathnormal" style="color:#000000;">a</span><span class="mord mathnormal" style="margin-right:0.02778em;color:#000000;">r</span><span class="mord mathnormal" style="color:#000000;">d</span><span class="mord mathnormal" style="color:#000000;">s</span></span></span></span></span></span><span>﻿</span></span></h1><hr id="19232bd0-19cb-8024-afb9-ea75ed080c8b"/><blockquote id="19232bd0-19cb-80a8-865f-f5cc30739695" class=""><strong>연구 성과 경진 대회 및 제 33회 소프트웨어 전시회 대상</strong><mark class="highlight-gray"><strong>  </strong></mark><mark class="highlight-gray"> 경상국립대학교 컴퓨터공학과   2024</mark><p id="19332bd0-19cb-8041-b60f-feb215d85def" class="">💊 약물 남용 방지 정보 제공 시스템</p></blockquote><blockquote id="19232bd0-19cb-8025-aa96-f13fc9d8232c" class=""><strong>대학생 논문 경진대회 금상</strong><mark class="highlight-gray"><strong>  </strong></mark><mark class="highlight-gray"> 한국 정보 기술 학회   2024</mark><p id="19332bd0-19cb-803e-9e13-d42cfad1445e" class="">🚢 효율적인 항만 운영 시스템을 위한 기계학습 기반 항만 내 선박 대기시간 예측</p></blockquote><blockquote id="19232bd0-19cb-805e-bea0-d15d20e4d8cf" class=""><strong>대학생 논문 경진대회 금상</strong><mark class="highlight-gray"><strong>  </strong></mark><mark class="highlight-gray"> 한국 정보 기술 학회   2024</mark><p id="19332bd0-19cb-8016-8e89-d031dde75425" class="">👨🏻‍🦼 장애인 특별 교통 수단의 대기시간에 영향을 미치는 주요 요인 분석과 최적화 전략</p></blockquote><blockquote id="19232bd0-19cb-8065-a792-ec2c526399df" class=""><mark class="highlight-default"><strong>빅데이터로 우리 동네 문제 해결 아이디어 공모 대회 우수상</strong></mark><mark class="highlight-gray"><strong>  </strong></mark><mark class="highlight-gray"> 스마트 공동체 사업단 / LH   2024</mark><p id="19332bd0-19cb-80c6-a095-ecedf8b82bee" class="">📹 범죄 예방을 위한 우선 순위 기반 진주시 CCTV 최적 입지 선정</p></blockquote><blockquote id="19232bd0-19cb-805e-a3df-ed00b80ef618" class=""><strong>대학생 논문 경진대회 금상</strong><mark class="highlight-gray"><strong>  </strong></mark><mark class="highlight-gray"> 한국 정보 기술 학회   2023</mark><p id="19332bd0-19cb-8080-a318-ddd333a65b6a" class="">🏴‍☠️ Neo-FFI-R 성격 유형 검사를 활용한 머신러닝 기반 마약 소비 위험도 예측 및 종류 분류</p></blockquote><p id="1af32bd0-19cb-808c-84f7-dda8dcee56e8" class="">
+</p><h1 id="19232bd0-19cb-81a8-bd6f-d3432230235e" class="block-color-blue"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>P</mi><mi>a</mi><mi>p</mi><mi>e</mi><mi>r</mi><mi>s</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Papers}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.13889em;color:#000000;">P</span><span class="mord mathnormal" style="color:#000000;">a</span><span class="mord mathnormal" style="color:#000000;">p</span><span class="mord mathnormal" style="color:#000000;">ers</span></span></span></span></span></span><span>﻿</span></span>  <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>a</mi><mi>n</mi><mi>d</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{and}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="color:#000000;">an</span><span class="mord mathnormal" style="color:#000000;">d</span></span></span></span></span></span><span>﻿</span></span>  <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>J</mi><mi>o</mi><mi>u</mi><mi>r</mi><mi>n</mi><mi>a</mi><mi>l</mi><mi>s</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Journals}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.09618em;color:#000000;">J</span><span class="mord mathnormal" style="color:#000000;">o</span><span class="mord mathnormal" style="color:#000000;">u</span><span class="mord mathnormal" style="margin-right:0.02778em;color:#000000;">r</span><span class="mord mathnormal" style="color:#000000;">na</span><span class="mord mathnormal" style="margin-right:0.01968em;color:#000000;">l</span><span class="mord mathnormal" style="color:#000000;">s</span></span></span></span></span></span><span>﻿</span></span> </h1><hr id="19232bd0-19cb-81b7-8f47-fe44932d5548"/><blockquote id="19232bd0-19cb-805e-8ed5-c02864d50b39" class=""><strong>Predicting ship waiting times with machine learning for enhanced port operations   </strong><mark class="highlight-gray">IEEE acess </mark><p id="19332bd0-19cb-80d8-8e9b-e55ed56c979e" class=""><mark class="highlight-default">1차 투고 후 revision</mark></p></blockquote><blockquote id="19232bd0-19cb-8022-9504-fbabb0c6784a" class=""><strong>Machine learning-based port ship waiting time prediction for efficient port operation system </strong><mark class="highlight-gray">Proceedings of KIIT Conference </mark></blockquote><blockquote id="19232bd0-19cb-801e-b57e-d93d5f822921" class=""><strong>Analysis of key factors affecting waiting time of special transportation for the disabled and optimization strategies  </strong><mark class="highlight-gray"><strong> </strong></mark><mark class="highlight-gray">Proceedings of KIIT Conference</mark></blockquote><blockquote id="19232bd0-19cb-80d6-b925-e84c7fff2eb8" class=""><strong>Machine learning-based drug consumption risk prediction and drug type classification using the NEO-FFI-R test  </strong><mark class="highlight-gray"><strong> </strong></mark><mark class="highlight-gray">Proceedings of KIIT Conference</mark></blockquote><p id="1af32bd0-19cb-8012-bc26-d5d94e83c2d7" class="">
+</p><h1 id="19232bd0-19cb-815d-b597-d10be7b044cc" class="block-color-blue"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>P</mi><mi>r</mi><mi>o</mi><mi>j</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>s</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Projects}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.13889em;color:#000000;">P</span><span class="mord mathnormal" style="color:#000000;">ro</span><span class="mord mathnormal" style="margin-right:0.05724em;color:#000000;">j</span><span class="mord mathnormal" style="color:#000000;">ec</span><span class="mord mathnormal" style="color:#000000;">t</span><span class="mord mathnormal" style="color:#000000;">s</span></span></span></span></span></span><span>﻿</span></span></h1><div id="19232bd0-19cb-81e1-8189-e020b810e902" class="collection-content"><h4 class="collection-title">프로젝트 </h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesTitle"><path d="M0.637695 13.1914C1.0957 13.1914 1.32812 13 1.47852 12.5215L2.24414 10.3887H6.14746L6.90625 12.5215C7.05664 13 7.2959 13.1914 7.74707 13.1914C8.22559 13.1914 8.5332 12.9043 8.5332 12.4531C8.5332 12.2891 8.50586 12.1523 8.44434 11.9678L5.41602 3.79199C5.2041 3.21777 4.82129 2.9375 4.19922 2.9375C3.60449 2.9375 3.21484 3.21777 3.0166 3.78516L-0.0322266 12.002C-0.09375 12.1797 -0.121094 12.3232 -0.121094 12.4668C-0.121094 12.918 0.166016 13.1914 0.637695 13.1914ZM2.63379 9.12402L4.17871 4.68066H4.21973L5.76465 9.12402H2.63379ZM12.2793 13.2324C13.3115 13.2324 14.2891 12.6787 14.7129 11.8037H14.7402V12.5762C14.7471 12.9863 15.0273 13.2393 15.4238 13.2393C15.834 13.2393 16.1143 12.9795 16.1143 12.5215V8.00977C16.1143 6.49902 14.9658 5.52148 13.1543 5.52148C11.7666 5.52148 10.6592 6.08887 10.2695 6.99121C10.1943 7.15527 10.1533 7.3125 10.1533 7.46289C10.1533 7.81152 10.4062 8.04395 10.7686 8.04395C11.0215 8.04395 11.2129 7.94824 11.3496 7.73633C11.7529 6.99121 12.2861 6.65625 13.1064 6.65625C14.0977 6.65625 14.6992 7.20996 14.6992 8.1123V8.67285L12.5664 8.7959C10.7686 8.8916 9.77734 9.69824 9.77734 11.0107C9.77734 12.3369 10.8096 13.2324 12.2793 13.2324ZM12.6621 12.1387C11.8008 12.1387 11.2129 11.667 11.2129 10.9561C11.2129 10.2725 11.7598 9.82129 12.7578 9.75977L14.6992 9.62988V10.3203C14.6992 11.3457 13.7969 12.1387 12.6621 12.1387Z"></path></svg></span>Name</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesMultipleSelect"><path d="M1.91602 4.83789C2.44238 4.83789 2.87305 4.40723 2.87305 3.87402C2.87305 3.34766 2.44238 2.91699 1.91602 2.91699C1.38281 2.91699 0.952148 3.34766 0.952148 3.87402C0.952148 4.40723 1.38281 4.83789 1.91602 4.83789ZM5.1084 4.52344H14.3984C14.7607 4.52344 15.0479 4.23633 15.0479 3.87402C15.0479 3.51172 14.7607 3.22461 14.3984 3.22461H5.1084C4.74609 3.22461 4.45898 3.51172 4.45898 3.87402C4.45898 4.23633 4.74609 4.52344 5.1084 4.52344ZM1.91602 9.03516C2.44238 9.03516 2.87305 8.60449 2.87305 8.07129C2.87305 7.54492 2.44238 7.11426 1.91602 7.11426C1.38281 7.11426 0.952148 7.54492 0.952148 8.07129C0.952148 8.60449 1.38281 9.03516 1.91602 9.03516ZM5.1084 8.7207H14.3984C14.7607 8.7207 15.0479 8.43359 15.0479 8.07129C15.0479 7.70898 14.7607 7.42188 14.3984 7.42188H5.1084C4.74609 7.42188 4.45898 7.70898 4.45898 8.07129C4.45898 8.43359 4.74609 8.7207 5.1084 8.7207ZM1.91602 13.2324C2.44238 13.2324 2.87305 12.8018 2.87305 12.2686C2.87305 11.7422 2.44238 11.3115 1.91602 11.3115C1.38281 11.3115 0.952148 11.7422 0.952148 12.2686C0.952148 12.8018 1.38281 13.2324 1.91602 13.2324ZM5.1084 12.918H14.3984C14.7607 12.918 15.0479 12.6309 15.0479 12.2686C15.0479 11.9062 14.7607 11.6191 14.3984 11.6191H5.1084C4.74609 11.6191 4.45898 11.9062 4.45898 12.2686C4.45898 12.6309 4.74609 12.918 5.1084 12.918Z"></path></svg></span>분야</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesDate"><path d="M3.29688 14.4561H12.7031C14.1797 14.4561 14.9453 13.6904 14.9453 12.2344V3.91504C14.9453 2.45215 14.1797 1.69336 12.7031 1.69336H3.29688C1.82031 1.69336 1.05469 2.45215 1.05469 3.91504V12.2344C1.05469 13.6973 1.82031 14.4561 3.29688 14.4561ZM3.27637 13.1162C2.70898 13.1162 2.39453 12.8154 2.39453 12.2207V5.9043C2.39453 5.30273 2.70898 5.00879 3.27637 5.00879H12.71C13.2842 5.00879 13.6055 5.30273 13.6055 5.9043V12.2207C13.6055 12.8154 13.2842 13.1162 12.71 13.1162H3.27637ZM6.68066 7.38086H7.08398C7.33008 7.38086 7.41211 7.30566 7.41211 7.05957V6.66309C7.41211 6.41699 7.33008 6.3418 7.08398 6.3418H6.68066C6.44141 6.3418 6.35938 6.41699 6.35938 6.66309V7.05957C6.35938 7.30566 6.44141 7.38086 6.68066 7.38086ZM8.92285 7.38086H9.31934C9.56543 7.38086 9.64746 7.30566 9.64746 7.05957V6.66309C9.64746 6.41699 9.56543 6.3418 9.31934 6.3418H8.92285C8.67676 6.3418 8.59473 6.41699 8.59473 6.66309V7.05957C8.59473 7.30566 8.67676 7.38086 8.92285 7.38086ZM11.1582 7.38086H11.5547C11.8008 7.38086 11.8828 7.30566 11.8828 7.05957V6.66309C11.8828 6.41699 11.8008 6.3418 11.5547 6.3418H11.1582C10.9121 6.3418 10.8301 6.41699 10.8301 6.66309V7.05957C10.8301 7.30566 10.9121 7.38086 11.1582 7.38086ZM4.44531 9.58203H4.84863C5.09473 9.58203 5.17676 9.50684 5.17676 9.26074V8.86426C5.17676 8.61816 5.09473 8.54297 4.84863 8.54297H4.44531C4.20605 8.54297 4.12402 8.61816 4.12402 8.86426V9.26074C4.12402 9.50684 4.20605 9.58203 4.44531 9.58203ZM6.68066 9.58203H7.08398C7.33008 9.58203 7.41211 9.50684 7.41211 9.26074V8.86426C7.41211 8.61816 7.33008 8.54297 7.08398 8.54297H6.68066C6.44141 8.54297 6.35938 8.61816 6.35938 8.86426V9.26074C6.35938 9.50684 6.44141 9.58203 6.68066 9.58203ZM8.92285 9.58203H9.31934C9.56543 9.58203 9.64746 9.50684 9.64746 9.26074V8.86426C9.64746 8.61816 9.56543 8.54297 9.31934 8.54297H8.92285C8.67676 8.54297 8.59473 8.61816 8.59473 8.86426V9.26074C8.59473 9.50684 8.67676 9.58203 8.92285 9.58203ZM11.1582 9.58203H11.5547C11.8008 9.58203 11.8828 9.50684 11.8828 9.26074V8.86426C11.8828 8.61816 11.8008 8.54297 11.5547 8.54297H11.1582C10.9121 8.54297 10.8301 8.61816 10.8301 8.86426V9.26074C10.8301 9.50684 10.9121 9.58203 11.1582 9.58203ZM4.44531 11.7832H4.84863C5.09473 11.7832 5.17676 11.708 5.17676 11.4619V11.0654C5.17676 10.8193 5.09473 10.7441 4.84863 10.7441H4.44531C4.20605 10.7441 4.12402 10.8193 4.12402 11.0654V11.4619C4.12402 11.708 4.20605 11.7832 4.44531 11.7832ZM6.68066 11.7832H7.08398C7.33008 11.7832 7.41211 11.708 7.41211 11.4619V11.0654C7.41211 10.8193 7.33008 10.7441 7.08398 10.7441H6.68066C6.44141 10.7441 6.35938 10.8193 6.35938 11.0654V11.4619C6.35938 11.708 6.44141 11.7832 6.68066 11.7832ZM8.92285 11.7832H9.31934C9.56543 11.7832 9.64746 11.708 9.64746 11.4619V11.0654C9.64746 10.8193 9.56543 10.7441 9.31934 10.7441H8.92285C8.67676 10.7441 8.59473 10.8193 8.59473 11.0654V11.4619C8.59473 11.708 8.67676 11.7832 8.92285 11.7832Z"></path></svg></span>작업기간</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesNumber"><path d="M2.4834 10.9902H4.33594L3.75488 13.8887C3.74121 13.9639 3.72754 14.0664 3.72754 14.1416C3.72754 14.5381 3.99414 14.7637 4.39746 14.7637C4.81445 14.7637 5.09473 14.5449 5.18359 14.1143L5.80566 10.9902H8.79297L8.21191 13.8887C8.19824 13.9639 8.18457 14.0664 8.18457 14.1416C8.18457 14.5381 8.45117 14.7637 8.85449 14.7637C9.27148 14.7637 9.55176 14.5449 9.63379 14.1143L10.2627 10.9902H12.4502C12.9287 10.9902 13.2432 10.6758 13.2432 10.2109C13.2432 9.8418 12.9902 9.56836 12.6006 9.56836H10.5498L11.2129 6.28711H13.3662C13.8379 6.28711 14.1523 5.96582 14.1523 5.50098C14.1523 5.13184 13.9062 4.8584 13.5098 4.8584H11.5L12.0195 2.27441C12.0264 2.21973 12.0469 2.11035 12.0469 2.01465C12.0469 1.625 11.7666 1.39258 11.3633 1.39258C10.9053 1.39258 10.6797 1.63867 10.5977 2.05566L10.0303 4.8584H7.04297L7.5625 2.27441C7.57617 2.21973 7.58984 2.11035 7.58984 2.01465C7.58984 1.625 7.30957 1.39258 6.91309 1.39258C6.44824 1.39258 6.21582 1.63867 6.13379 2.05566L5.57324 4.8584H3.54297C3.06445 4.8584 2.75 5.18652 2.75 5.65137C2.75 6.03418 3.00293 6.28711 3.39258 6.28711H5.28613L4.62305 9.56836H2.63379C2.15527 9.56836 1.84082 9.89648 1.84082 10.3613C1.84082 10.7373 2.09375 10.9902 2.4834 10.9902ZM6.09277 9.56836L6.75586 6.28711H9.74316L9.08008 9.56836H6.09277Z"></path></svg></span>참여인원</th></tr></thead><tbody><tr id="19232bd0-19cb-805e-8baf-f9a084010f3f"><td class="cell-title"><a href="https://www.notion.so/19232bd019cb805e8baff9a084010f3f?pvs=21"><span class="icon">📕</span>도서 정보를 활용한 딥러닝 기반 베스트 셀러 예측</a></td><td class="cell-BTao"><span class="selected-value select-value-color-purple">Deep Learning</span><span class="selected-value select-value-color-blue">NLP</span></td><td class="cell-`Bst"><time>@2024년 12월 10일 → 2025년 2월 28일</time></td><td class="cell-o}`:">1</td></tr><tr id="19232bd0-19cb-812d-9e46-ebf5d9ce8632"><td class="cell-title"><a href="https://www.notion.so/19232bd019cb812d9e46ebf5d9ce8632?pvs=21"><span class="icon">🚢</span>효율적인 항만 운영 시스템을 위한 기계학습 기반 항만 내 선박 대기시간 예측</a></td><td class="cell-BTao"><span class="selected-value select-value-color-pink">Machine Learning</span></td><td class="cell-`Bst"><time>@2024년 8월 28일 → 2024년 12월 30일</time></td><td class="cell-o}`:">1</td></tr><tr id="19232bd0-19cb-8164-8b61-e1f93464d9cc"><td class="cell-title"><a href="https://www.notion.so/19232bd019cb81648b61e1f93464d9cc?pvs=21"><span class="icon">👩🏻‍🦼</span>장애인 특별 교통 수단의 대기시간에 영향을 미치는 주요 요인 분석과 최적화 전략</a></td><td class="cell-BTao"><span class="selected-value select-value-color-green">Data Analysis</span><span class="selected-value select-value-color-pink">Machine Learning</span></td><td class="cell-`Bst"><time>@2024년 8월 10일 → 2024년 10월 31일</time></td><td class="cell-o}`:">3</td></tr><tr id="19232bd0-19cb-81b6-9851-d079d51486cd"><td class="cell-title"><a href="https://www.notion.so/CCTV-19232bd019cb81b69851d079d51486cd?pvs=21"><span class="icon">📹</span>범죄 예방을 위한 우선 순위 기반 진주시 CCTV 최적 입지 선정</a></td><td class="cell-BTao"><span class="selected-value select-value-color-green">Data Analysis</span></td><td class="cell-`Bst"><time>@2024년 6월 3일 → 2024년 8월 13일</time></td><td class="cell-o}`:">3</td></tr><tr id="19232bd0-19cb-8115-8990-f4965254a865"><td class="cell-title"><a href="https://www.notion.so/19232bd019cb81158990f4965254a865?pvs=21"><span class="icon">💊</span>약물 남용 방지 정보 제공 시스템</a></td><td class="cell-BTao"><span class="selected-value select-value-color-pink">Machine Learning</span></td><td class="cell-`Bst"><time>@2023년 9월 1일 → 2024년 5월 20일</time></td><td class="cell-o}`:">3</td></tr></tbody></table><br/><br/></div><h1 id="19232bd0-19cb-8065-98cf-c41c13764f33" class="block-color-blue"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>E</mi><mi>x</mi><mi>p</mi><mi>e</mi><mi>r</mi><mi>i</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>e</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Experience}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.05764em;color:#000000;">E</span><span class="mord mathnormal" style="color:#000000;">x</span><span class="mord mathnormal" style="color:#000000;">p</span><span class="mord mathnormal" style="margin-right:0.02778em;color:#000000;">er</span><span class="mord mathnormal" style="color:#000000;">i</span><span class="mord mathnormal" style="color:#000000;">e</span><span class="mord mathnormal" style="color:#000000;">n</span><span class="mord mathnormal" style="color:#000000;">ce</span></span></span></span></span></span><span>﻿</span></span></h1><hr id="19232bd0-19cb-814e-b415-f661cbe912a6"/><div id="19232bd0-19cb-80c6-b477-d2bf181a5814" class="column-list"><div id="19232bd0-19cb-8054-b855-d2d940c76e69" style="width:31.25%" class="column"><h2 id="19232bd0-19cb-806a-a52d-c8085f982d21" class="block-color-gray">2024.02<br/>-현재<br/></h2><p id="19232bd0-19cb-801c-949d-e181f4f3dffd" class=""><mark class="highlight-gray">12 months</mark></p><p id="19232bd0-19cb-80a5-872d-f34f2497c835" class="">
+</p><p id="19232bd0-19cb-806f-bcca-f022d223ec4a" class="">
+</p><p id="19232bd0-19cb-80d0-bf5e-ddc65f79fa27" class="">
+</p><h2 id="19232bd0-19cb-8020-bd3a-ff9d109bd7d5" class="block-color-gray">2023.03<br/>-2024.02<br/></h2><p id="19232bd0-19cb-801f-9100-d264b14ac69d" class=""><mark class="highlight-gray">12 months</mark></p><p id="19232bd0-19cb-80e0-98d5-e8462f102363" class="">
+</p></div><div id="19232bd0-19cb-80d9-8500-e3e7102ce78b" style="width:100%" class="column"><h2 id="19232bd0-19cb-808d-a9c8-c28d471e2365" class=""><mark class="highlight-purple"><mark class="highlight-default_background">경상국립대학교 컴퓨터공학부 BII(BioInformatics Intelligence) 연구실 </mark></mark><br/>학부 연구생<br/></h2><ul id="19232bd0-19cb-8040-869f-c1c9607299ba" class="toggle"><li><details open=""><summary>딥러닝 프로젝트 연구</summary><ul id="19232bd0-19cb-800c-889a-edc41d5b6f34" class="bulleted-list"><li style="list-style-type:disc"><strong>도서 정보를 활용한 딥러닝 기반 베스트 셀러 예측</strong>  <mark class="highlight-gray">2024.12 - 현재</mark></li></ul></details></li></ul><ul id="19232bd0-19cb-8012-90bb-e1cef08d9565" class="toggle"><li><details open=""><summary>머신러닝 프로젝트 연구</summary><ul id="19232bd0-19cb-8097-a4d7-d80716b0251f" class="bulleted-list"><li style="list-style-type:disc"><strong>효율적인 항만 운영 시스템을 위한 선박 대기시간 예측</strong>  <mark class="highlight-gray">2024.08 - 2024.12</mark></li></ul></details></li></ul><ul id="19232bd0-19cb-8002-86ad-d2eb4a5b420a" class="toggle"><li><details open=""><summary>데이터 분석 프로젝트 연구</summary><ul id="19232bd0-19cb-808b-bf8e-d04274a4fbad" class="bulleted-list"><li style="list-style-type:disc"><strong>장애인 특별 교통 수단 대기시간 분석 및 최적화</strong>  <mark class="highlight-gray">2024.08 - 2024.10</mark></li></ul><ul id="19232bd0-19cb-80c4-8752-e5fbd585ce5a" class="bulleted-list"><li style="list-style-type:disc"><strong>범죄 예방을 위한 우선 순위 기반 진주시 CCTV <br/>최적 입지 선정<br/></strong>  <mark class="highlight-gray">2024.06 - 2024.08</mark></li></ul></details></li></ul><hr id="19232bd0-19cb-80f6-bb5c-f139be496d72"/><h2 id="19232bd0-19cb-802d-8a82-c03b4cf46de8" class=""><mark class="highlight-purple">경상국립대학교 중앙동아리 이카루스 </mark><br/>AI 팀장<br/></h2><ul id="19232bd0-19cb-8012-ac09-e949b744690c" class="toggle"><li><details open=""><summary>AI 프로젝트 </summary><ul id="19232bd0-19cb-8077-92f9-c3e45acf8663" class="bulleted-list"><li style="list-style-type:disc"><strong>Reborn : AI를 활용한 이미지 인식 및 재활용 안내 어플 </strong><mark class="highlight-gray">2023.07 - 2023.09</mark><ul id="19232bd0-19cb-8048-a1ee-dfaa576bd20c" class="bulleted-list"><li style="list-style-type:circle">roboflow를 통한 이미지 라벨링과 python과 pytorch, YOLO5 모델을 활용하여 이미지 인식 및 분류 진행</li></ul><ul id="19232bd0-19cb-80af-ab03-e92e3562717c" class="bulleted-list"><li style="list-style-type:circle">2023년 공개SW 개발자대회 우수작 정보집에 우수작으로 선정되어 실림</li></ul></li></ul><p id="19232bd0-19cb-800b-8af8-f2f8179ef41c" class="">
+</p></details></li></ul></div></div><div id="19232bd0-19cb-805c-82ea-f82ac04985b8" class="column-list"><div id="19232bd0-19cb-806e-83f8-db2400b4ad57" style="width:31.25%" class="column"><h2 id="19232bd0-19cb-80ad-ae92-c4c5d9e394ae" class="block-color-gray">2023.06<br/>-2023.08<br/></h2><p id="19232bd0-19cb-8068-be5c-ee19afebbecb" class=""><mark class="highlight-gray">2 months</mark></p><p id="19232bd0-19cb-8075-944d-c1b4b35c569e" class="">
+</p></div><div id="19232bd0-19cb-8002-90ca-d2ff97edd58b" style="width:100%" class="column"><hr id="19232bd0-19cb-8031-8bcc-d1c75c487698"/><h2 id="19232bd0-19cb-805e-848a-db0050b05e6d" class=""><mark class="highlight-purple">(주)엔스퀘어 SW팀</mark><br/>인턴<br/></h2><ul id="19232bd0-19cb-80f0-8477-d343f45f2fd6" class="toggle"><li><details open=""><summary>기존의 다차원 데이터를 DB 테이블로 변환(SQLite, MySQL)</summary></details></li></ul><ul id="19232bd0-19cb-808d-9a98-c98e83c8e3f7" class="toggle"><li><details open=""><summary>SW알고리즘 구현</summary></details></li></ul><ul id="19232bd0-19cb-8026-94b7-cfbed00d82f1" class="toggle"><li><details open=""><summary>AutoCad API를 활용한 도면 작성 자동화 SW 구현</summary></details></li></ul><ul id="19232bd0-19cb-8077-aad1-fb42a49654e8" class="toggle"><li><details open=""><summary>프로그램 UI설계 및 구현</summary></details></li></ul><ul id="19232bd0-19cb-80d0-9d4d-da42d2a64299" class="toggle"><li><details open=""><summary>프로그램 테스팅</summary></details></li></ul></div></div><h1 id="19232bd0-19cb-8086-a727-e1a28845435f" class="block-color-blue"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>C</mi><mi>e</mi><mi>r</mi><mi>t</mi><mi>i</mi><mi>f</mi><mi>i</mi><mi>c</mi><mi>a</mi><mi>t</mi><mi>e</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Certificate}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.07153em;color:#000000;">C</span><span class="mord mathnormal" style="margin-right:0.02778em;color:#000000;">er</span><span class="mord mathnormal" style="color:#000000;">t</span><span class="mord mathnormal" style="color:#000000;">i</span><span class="mord mathnormal" style="margin-right:0.10764em;color:#000000;">f</span><span class="mord mathnormal" style="color:#000000;">i</span><span class="mord mathnormal" style="color:#000000;">c</span><span class="mord mathnormal" style="color:#000000;">a</span><span class="mord mathnormal" style="color:#000000;">t</span><span class="mord mathnormal" style="color:#000000;">e</span></span></span></span></span></span><span>﻿</span></span></h1><hr id="19232bd0-19cb-800f-b44a-d998f22d6620"/><blockquote id="19232bd0-19cb-8034-9b4a-ea8fd92409e8" class=""><strong>ADsP(데이터분석준전문가) </strong>   <mark class="highlight-gray">2024.09.06</mark> <p id="19232bd0-19cb-80c3-9cb8-e5b9ab7f2bab" class=""><mark class="highlight-gray">발급 기관 |</mark> <mark class="highlight-gray">한국데이터산업진흥원</mark> <mark class="highlight-purple">(042019215)</mark></p></blockquote><h1 id="19232bd0-19cb-8171-b2e0-fb82f91b47d0" class="block-color-blue"><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>S</mi><mi>k</mi><mi>i</mi><mi>l</mi><mi>l</mi><mi>s</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Skills}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="margin-right:0.05764em;color:#000000;">S</span><span class="mord mathnormal" style="color:#000000;">ki</span><span class="mord mathnormal" style="margin-right:0.01968em;color:#000000;">ll</span><span class="mord mathnormal" style="color:#000000;">s</span></span></span></span></span></span><span>﻿</span></span></h1><hr id="19232bd0-19cb-81b1-9ca1-d3c655c0e0c6"/><h3 id="19232bd0-19cb-81dd-9846-f87074d52fe2" class="block-color-purple"> Programming Languages</h3><div id="19232bd0-19cb-8114-91dc-de6b93295d4e" class="column-list"><div id="19232bd0-19cb-81d2-84e3-f662bbeb1c1e" style="width:100%" class="column"><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="19232bd0-19cb-81e3-a13e-e3f3e13164a1"><div style="font-size:1.5em"><img class="icon" src="python.png"/></div><div style="width:100%">Python                        </div></figure></div><div id="19232bd0-19cb-81a7-8741-e0c3dd0453b6" style="width:100%" class="column"><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="19232bd0-19cb-81f0-bbcf-fd19ea3aa338"><div style="font-size:1.5em"><img class="icon" src="C.png"/></div><div style="width:100%">C++                              </div></figure></div></div><h3 id="19232bd0-19cb-81cd-b2f7-f18af5776d5b" class="block-color-purple">Frameworks </h3><div id="1af32bd0-19cb-80e7-9924-c0408bf0b76a" class="column-list"><div id="1af32bd0-19cb-8097-9732-f38c58608a92" style="width:50%" class="column"><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="19232bd0-19cb-8046-979b-fba5ecdadc1c"><div style="font-size:1.5em"><img class="icon" src="sklearn.png"/></div><div style="width:100%">Scikit-learn               </div></figure><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="19232bd0-19cb-8023-8766-ccf9801ca7f5"><div style="font-size:1.5em"><img class="icon" src="tensorflow.png"/></div><div style="width:100%">Tensorflow                  </div></figure></div><div id="1af32bd0-19cb-806c-a488-cb5ece9a2f74" style="width:50%" class="column"><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="19232bd0-19cb-8046-afcb-df282fac6954"><div style="font-size:1.5em"><img class="icon" src="pytorch.png"/></div><div style="width:100%">Pytorch                       </div></figure><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="19232bd0-19cb-80de-a535-c3c37f978a2b"><div style="font-size:1.5em"><img class="icon" src="keras.png"/></div><div style="width:100%">Keras                      </div></figure><p id="1af32bd0-19cb-80ca-ad6a-f90c2131cf03" class="">
+</p></div></div><h3 id="1af32bd0-19cb-80a0-9ad3-da3a23a85134" class="block-color-purple">OA</h3><div id="1af32bd0-19cb-8057-96b3-e346d4d07af9" class="column-list"><div id="1af32bd0-19cb-8079-808b-d45a9d109c94" style="width:50%" class="column"><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="1af32bd0-19cb-806c-8d67-ee257001e4d2"><div style="font-size:1.5em"><img class="icon" src="ppt.jpg"/></div><div style="width:100%">PowerPoint         </div></figure><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="1af32bd0-19cb-8040-bf23-c255678b32bb"><div style="font-size:1.5em"><img class="icon" src="excel.png"/></div><div style="width:100%">Excel                      </div></figure></div><div id="1af32bd0-19cb-8015-9599-e53c37cee92f" style="width:50%" class="column"><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="1af32bd0-19cb-80ba-82a6-f3559af758fd"><div style="font-size:1.5em"><img class="icon" src="word.png"/></div><div style="width:100%">Word                    </div></figure><p id="1af32bd0-19cb-8012-9c32-fbb1a4cacc8a" class="">
+</p></div></div><h3 id="1af32bd0-19cb-8008-91a5-eb226451aa5b" class="block-color-purple">Collaboration</h3><div id="1af32bd0-19cb-8084-bd50-ded7ecf74b39" class="column-list"><div id="1af32bd0-19cb-80dd-8018-e3b4e3d8f9de" style="width:50%" class="column"><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="19232bd0-19cb-81aa-aeff-c010a4fdad84"><div style="font-size:1.5em"><img class="icon" src="notion.png"/></div><div style="width:100%">Notion                             </div></figure></div><div id="1af32bd0-19cb-805a-96c1-f164ada7f1de" style="width:50%" class="column"><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="19232bd0-19cb-81ca-9764-e5675a829a56"><div style="font-size:1.5em"><img class="icon" src="git.png"/></div><div style="width:100%">git                                  </div></figure></div></div><h1 id="1a032bd0-19cb-804c-aa44-ca41358123de" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="#000000"><mrow><mi>L</mi><mi>i</mi><mi>n</mi><mi>k</mi><mi>s</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{000000}{Links}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord" style="color:#000000;"><span class="mord mathnormal" style="color:#000000;">L</span><span class="mord mathnormal" style="margin-right:0.03148em;color:#000000;">ink</span><span class="mord mathnormal" style="color:#000000;">s</span></span></span></span></span></span><span>﻿</span></span></h1><hr id="1af32bd0-19cb-8046-b792-df63062d7814"/><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="1af32bd0-19cb-8040-b698-f95825978b39"><div style="font-size:1.5em"><img class="icon" src="github.png"/></div><div style="width:100%">GitHub<br/><br/><a href="https://github.com/alsghk05">https://github.com/alsghk05</a></div></figure><p id="1af32bd0-19cb-80a5-9c9b-c10be08f191a" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
